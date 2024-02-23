@@ -3,7 +3,7 @@ on:  # when will it trigger
   push: # On push it will trigger
     branches: # Which branch will it trigger
       -main # On Main branch it will trigger
-  workflow_dispthch:
+  workflow_dispatch:
 jobs: # Works to be done
   build_and_test: # Pipeline to be complete
     runs-on: ubuntu-20.04 # Server to be ran on
