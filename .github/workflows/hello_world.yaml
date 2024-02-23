@@ -1,0 +1,19 @@
+name:Hello bye
+on:  # when will it trigger
+  push: # On push it will trigger
+    branches: # Which branch will it trigger
+      -main # On Main branch it will trigger
+  workflow_dispthch:
+jobs: # Works to be done
+  build_and_test: # Pipeline to be complete
+    runs-on: ubuntu-20.04 # Server to be ran on
+    steps: # Steps to go through
+     -name: Clone Code # Name of the steps
+      uses: actions/checkout@v2 # What it does
+     -name: Compile Jave File # Name of the steps
+     shell: bash # What shell to use
+     run: javac Main.java # What it does
+    -name: Run The Java File # Name of the steps
+     shell: bash # What shell to use
+     run: java Main # What it does
+
